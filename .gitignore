@@ -1,0 +1,6 @@
+.netrwhist
+*~
+vim/*
+nvim/*
+!vim/.setup.markdown
+!nvim/.setup.markdown
