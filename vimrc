@@ -1,4 +1,4 @@
-" Authors: Steven IO
+" Authors: Steven W
 " Description: This is a vimrc that I took from the vim wiki and modified.
 "
 "------------------------------------------------------------
@@ -25,6 +25,7 @@ syntax on
 set hidden
 
 " Better command-line completion
+set wildmode=longest,list,full
 set wildmenu
 
 " Show partial commands in the last line of the screen
@@ -95,6 +96,14 @@ set lazyredraw
 " Prevent the annoying going to partial match while typing.
 set noincsearch
 
+" Don't insert newlines to wrap text. Do it visually
+"set wrap
+"set linebreak
+"set nolist
+"
+"set textwidth=0
+"set wrapmargin=0
+
 "------------------------------------------------------------
 " Mappings
 
@@ -141,7 +150,11 @@ endif
     nnoremap <leader>L :Lines<cr>
 "endif
 
+"===Ag====
 nnoremap <leader>a :Ag 
+
+"===Tabularize===
+nnoremap <leader>T :Tabularize /
 
 "===Neovim mappings===
 if has('nvim')
