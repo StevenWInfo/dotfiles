@@ -138,7 +138,10 @@ endif
 " fzf.vim. I think the buffer one could be useful.
 "if exists(':FZF<CR>')
     nnoremap <leader>f :FZF<cr>
+    nnoremap <leader>L :Lines<cr>
 "endif
+
+nnoremap <leader>a :Ag 
 
 "===Neovim mappings===
 if has('nvim')
@@ -254,6 +257,12 @@ endif
 "Not exactly a plugin, but plugin like.
 
 set rtp+=~/.fzf
+
+"===Ag===
+
+if exists(':Ag<CR>')
+    let g:ag_working_path_mode='r'
+endif
 
 "--------------------------
 " Neovim configurations
