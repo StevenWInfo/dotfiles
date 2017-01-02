@@ -32,6 +32,6 @@ main = do
       , terminal = "urxvt"
       , modMask = mod4Mask
       } `additionalKeys`
-      [ ((mod4Mask .|. controlMask, xK_t), spawn "/home/steven/Scripts/TimeDisplay.sh")
-      , ((mod4Mask .|. controlMask, xK_b), spawn "/home/steven/Scripts/BatteryStatus.sh")
+      [ ((mod4Mask .|. altMask, xK_t), spawn "/home/steven/bin/TimeDisplay")
+      , ((mod4Mask .|. altMask, xK_b), spawn "/home/steven/bin/BatteryStatus")
       ]
