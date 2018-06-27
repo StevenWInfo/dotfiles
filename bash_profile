@@ -23,3 +23,5 @@ export M2=$M2_HOME/bin
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TASKDDATA=/home/steven/.taskServer
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

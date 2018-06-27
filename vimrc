@@ -151,10 +151,14 @@ endif
 "endif
 
 "===Ag====
-nnoremap <leader>a :Ag 
+"if exists(':Ag<CR>')
+    nnoremap <leader>a :Ag 
+"endif
 
 "===Tabularize===
-nnoremap <leader>T :Tabularize /
+"if exists(':h Tabularize<CR>')
+    nnoremap <leader>t :Tabularize /
+"endif
 
 "===Neovim mappings===
 if has('nvim')

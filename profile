@@ -24,12 +24,14 @@ fi
 export M2_HOME=/usr/local/apache-maven
 export M2=$M2_HOME/bin
 
-PATH=~/.cabal/bin:$PATH:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/usr/local/apache-maven/bin:/usr/local/apache-maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$M2
+PATH="$HOME/.rbenv/bin:~/.cabal/bin:$PATH:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/usr/local/apache-maven/bin:/usr/local/apache-maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$M2:~/bin:~/.local/bin:/usr/local/go/bin"
 
-PATH=$PATH:~/bin:~/.local/bin
-
-#export PATH
+export PATH
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TASKDDATA=/home/steven/.taskServer
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

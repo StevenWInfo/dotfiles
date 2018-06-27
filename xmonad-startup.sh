@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Set Background
-feh --bg-scale /home/steven/Pictures/wallpapers/forest.jpg &
+feh --bg-scale /home/steven/Pictures/wallpapers/Autumn/leafyTree.jpg &
 
 #Allow transparency and other possible eye candy
 xcompmgr &

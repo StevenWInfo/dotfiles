@@ -15,6 +15,7 @@ Since all of the plugins I use are in github already, there's no point in taking
 - vim-fugitive
 
 - vim-hdevtools
+    - Removed this one because some requirements weren't working.
 
 - fzf.vim
 
